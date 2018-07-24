@@ -7,7 +7,7 @@ $(document).ready(function(){
         
         e.preventDefault();
         
-        $("#cont").load("contact_page.html");
+        $("#cont").load($(this).attr('href'));
         
         });
         
