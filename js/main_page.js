@@ -3,7 +3,7 @@ $(document).ready(function(){
         window.location = 'index.html';
     });
 
-    $('a').click(function(e){
+    $('#contact_nav').click(function(e){
         
         e.preventDefault();
         
