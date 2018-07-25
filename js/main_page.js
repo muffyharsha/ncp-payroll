@@ -9,7 +9,7 @@ $(document).ready(function(){
         
         $("#cont").load($(this).attr('href'));
         
-        });
+    });
         
         $('#workdetails_nav').click(function(e){
         
@@ -27,5 +27,26 @@ $(document).ready(function(){
                 
                 });
 
+    $('#aeditbank').click(function(e){
+        
+         e.preventDefault();
+            
+        $("#cont").load($(this).attr('href'));
+            
+    });
+    $('#aaddbank').click(function(e){
+        
+        e.preventDefault();
+           
+       $("#cont").load($(this).attr('href'));
+           
+   });
+   $('#aviewbank').click(function(e){
+        
+    e.preventDefault();
+       
+   $("#cont").load($(this).attr('href'));
+       
+});       
 
 });
