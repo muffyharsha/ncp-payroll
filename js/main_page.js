@@ -19,7 +19,7 @@ $(document).ready(function(){
             
             });
             
-            $('#workdetails_nav2').click(function(e){
+            $('#personaldetails_nav').click(function(e){
         
                 e.preventDefault();
                 
