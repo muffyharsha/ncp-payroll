@@ -40,6 +40,13 @@ $(document).ready(function(){
            
        $("#cont").load($(this).attr('href'));
            
-   });       
+   });
+   $('#aviewbank').click(function(e){
+        
+    e.preventDefault();
+       
+   $("#cont").load($(this).attr('href'));
+       
+});       
 
 });
