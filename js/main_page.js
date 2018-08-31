@@ -1,15 +1,11 @@
 $(document).ready(function(){
+    $("#cont").load('workdetails_page.html');
+
     $("#signout").click(function(){
         window.location = 'index.html';
     });
 
-    $('#contact_nav').click(function(e){
-        
-        e.preventDefault();
-        
-        $("#cont").load($(this).attr('href'));
-        
-    });
+   
         
         $('#workdetails_nav').click(function(e){
         
