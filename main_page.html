@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,14 +8,14 @@
      <link href="https://fonts.googleapis.com/css?family=Glegoo:700" rel="stylesheet"> 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
      
 </head>
 
 
 <body>
-    
-        <div class="wrapper d-flex">
+        
+        <div class="wrapper">
                 <!-- Sidebar -->
                 <nav id="sidebar">
                     <div class="sidebar-header">
@@ -27,28 +28,28 @@
                             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Employee Leave</a>
                             <ul class="collapse list-unstyled" id="homeSubmenu">
                                 <li>
-                                    <a href="#">Apply Leave</a>
+                                    <a id="Apply_leave" href="Apply_leave.html">Apply Leave</a>
                                 </li>
                                 <li>
-                                    <a href="#">Leave History</a>
+                                    <a id="Leave_history"  href="Leave_history.html">Leave History</a>
                                 </li>
                                
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Personal Information</a>
+                            <a id="personaldetails_nav" href="personaldetails_page.html">Personal Information</a>
                         </li>
                         <li>
                             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Employee Finance Information</a>
                             <ul class="collapse list-unstyled" id="pageSubmenu">
                                 <li>
-                                    <a href="#">Edit Bank Details</a>
+                                    <a id = "aeditbank" href="EditBank.html">Edit Bank Details</a>
                                 </li>
                                 <li>
-                                    <a href="#">Add Bank Account</a>
+                                    <a id = "aaddbank" href="EditBank.html">Add Bank Account</a>
                                 </li>
                                 <li>
-                                    <a href="#">View Bank Account</a>
+                                    <a id = "aviewbank" href="ViewBank.html">View Bank Account</a>
                                 </li>
                                 <li>
                                     <a href="#">Paycheck History</a>
@@ -56,27 +57,27 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Work Details</a>
+                            <a id = "workdetails_nav" href="workdetails_page.html">Work Details</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a id="contact_nav" href="contact_page.html">Contact</a>
                         </li>
                         <li>
-                                <a id = "signout" href="">Logout</a> 
-                            </li>
+                            <a id = "signout" href="">Logout</a>
+                        </li>
                     </ul>
             
                 </nav>
-                <!-- Page Content -->
-                
-            </div>
-              
+               <div class = "container-fluid" id = "cont">
+
+                </div>
+            </div>      
 
         <script src="js/main_page.js"></script>    
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </body>
