@@ -1,6 +1,8 @@
+var emp_id;
 $(document).ready(function(){
     $("#login-button").click(function(){
         var id = $("#employeeID").val();
+        emp_id = id;
         var password = $("#password").val();
         var isValid = true;
         if (id == ""){
@@ -40,8 +42,27 @@ $(document).ready(function(){
 
 
         if (isValid){
-         window.location = 'main_page.html';
+           
+            $.get("https://harsha555.pythonanywhere.com/login", 
+              {
+                 id: id,
+                 password: password
+
+              }
+            ,function(data, status){
+                if (data == "success"){
+                    localStorage.setItem("id", id);
+                    window.location = "main_page.html";
+                }else{
+                    alert("invalid credentials")
+                }
+            });
+           
+
         }
+
+
+       
         
     });
 });
