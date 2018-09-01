@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<leavedetails>
+    <employee>
+        <employeeid>212701972</employeeid>
+        <startDate>22-05-2017</startDate>
+        <EndDate>25-05-2017</EndDate>
+        <Reason>Sick</Reason>
+    </employee>
+
+    <employee>
+        <employeeid>21295754</employeeid>
+        <startDate>01-01-2018</startDate>
+        <EndDate>07-01-2018</EndDate>
+        <Reason>Family Function</Reason>
+    </employee>
+</leavedetails>
