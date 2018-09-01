@@ -12,10 +12,9 @@ $(document).ready(function(){
        var myJSON = JSON.parse(data);
        console.log(myJSON);
        
-       $("#sdate").text(myJSON[1].start_date);
-       $("#edate").text(myJSON[1].end_date);
-      // $("#ndays").text(myJSON.blood_group);
-       $("#reason").text(myJSON[1].reason);
+       $("#sdate").text(myJSON[0].start_date);
+       $("#edate").text(myJSON[0].end_date);
+       $("#reason").text(myJSON[0].reason);
       
    });
    
