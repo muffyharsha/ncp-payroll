@@ -2,7 +2,7 @@ $(document).ready(function(){
    // $("button").click(function(){
     var id = localStorage.getItem("id");
 
-    $.get("https://harsha555.pythonanywhere.com/leave_history?", 
+    $.get("http://localhost:8080/ncp/leavehistory", 
     {
        id: id
        

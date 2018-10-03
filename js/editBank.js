@@ -3,7 +3,7 @@ $(document).ready(function(){
         var bank = $("#bank").val();
         var branch = $("#branch").val();
         var accno = $("#accno").val();
-        var ifcode = $("#ifcode").val();
+        var ifcode = $("#scode").val();
         
         var isValid = true;
         if (bank == ""){
@@ -56,19 +56,18 @@ $(document).ready(function(){
 
     
            console.log("yes");
-        $.get("https://harsha555.pythonanywhere.com/add_bank", 
+        $.get("http://localhost:8080/ncp/edit_bank", 
           {
             id: id,
             bank_name:$("#bank").val(),
             branch_name:$("#branch").val(),
-            sort_code:$("#ifcode").val(),
+            sort_code:$("#scode").val(),
             account_number:$("#accno").val()
-
+            
           }
         ,function(data, status){
             console.log(data);
         });
-    
         
     });
 });

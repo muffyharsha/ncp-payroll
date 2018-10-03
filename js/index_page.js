@@ -1,6 +1,7 @@
 var emp_id;
 $(document).ready(function(){
     $("#login-button").click(function(){
+        
         var id = $("#employeeID").val();
         emp_id = id;
         var password = $("#password").val();
@@ -43,19 +44,18 @@ $(document).ready(function(){
 
         if (isValid){
            
-            $.get("https://harsha555.pythonanywhere.com/login", 
+            $.get("http://localhost:8080/ncp/login", 
               {
                  id: id,
                  password: password
 
               }
             ,function(data, status){
-                if (data == "success"){
-                    localStorage.setItem("id", id);
-                    window.location = "main_page.html";
-                }else{
-                    alert("invalid credentials")
-                }
+              if (data == 'success'){
+                localStorage.setItem("id", id );
+                    window.location = 'main_page.html';
+                    
+              }
             });
            
 

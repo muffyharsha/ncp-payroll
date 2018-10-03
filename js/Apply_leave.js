@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     if (isValid){
            
-        $.get("https://harsha555.pythonanywhere.com/apply_leave", 
+        $.get("http://localhost:8080/ncp/apply_leave", 
           {
             id: id,
             StartDate:$("#start").val(),

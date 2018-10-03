@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     var id = localStorage.getItem("id");
    
-    $.get("https://harsha555.pythonanywhere.com/personal_details", 
+    $.get("https://localhost:8080/ncp/personal_details", 
     {
        id: id
        
